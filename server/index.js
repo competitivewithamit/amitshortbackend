@@ -9,7 +9,7 @@ require("dotenv").config();
 
 const app = express();
 
-const db = monk("localhost:27017");
+const db = monk("mongodb+srv://competitivewithamit:@mitH@ritw@l@cluster0.b6bxr.mongodb.net/url?retryWrites=true&w=majority");
 const urls = db.get("urls");
 urls.createIndex("name");
 
